@@ -2,7 +2,7 @@
 import "../styles/global.scss";
 import Links from "../Data/Links.astro";
 
-const { pageName } = Astro.props;
+const { pageName, title } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -10,7 +10,8 @@ const { pageName } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
+    <title>{title}</title>
   </head>
   <body class={pageName}>
     <header>What's up</header>

@@ -1,14 +1,25 @@
 ---
 import MainLayout from "../Layout/MainLayout.astro";
 const tits = "tiny";
+import About, { silly } from "./about.astro";
+export const mile = "/favicon.svg";
 ---
 
-<MainLayout pageName={`home ${tits}`}>
+<MainLayout pageName={`home ${tits}`} title="Home">
   <h1>Astro</h1>
+  <img src={mile} alt="" />
   <p>Yo, What's up?</p>
   <p>What is going on world</p>
+  <p>Are we there yet</p>
+  <p>{silly}</p>
 </MainLayout>
 
-<script>
-  console.log(window.location.pathname);
-</script>
+<style>
+  img {
+    width: 3rem;
+    color: green;
+    fill: yellow;
+  }
+  h1 {
+  }
+</style>

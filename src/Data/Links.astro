@@ -1,20 +1,35 @@
 ---
 const links = [
   {
-    url: "/pretty/",
+    url: "/",
     name: "Home",
   },
   {
-    url: "/pretty/about",
+    url: "/about",
     name: "About",
   },
   {
-    url: "/pretty/contact",
+    url: "/contact",
     name: "Contact",
   },
 ];
 ---
 
-<nav>
-  {links.map((link) => <a href={link.url}>{link.name}</a>)}
-</nav>
+<header>
+  <nav>
+    <div class="logo">
+      <a href="/">
+        <img src="/favicon.svg" alt="" />
+      </a>
+    </div>
+    <ul>
+      <li><a class="nav__link" href="/">Home</a></li>
+      <li><a class="nav__link" href="/about">About</a></li>
+      <li><a class="nav__link" href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style></style>
+
+<script src="../js/navLinks.js"></script>

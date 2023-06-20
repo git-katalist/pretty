@@ -1,5 +1,9 @@
 ---
 import MainLayout from "../Layout/MainLayout.astro";
+import { mile } from "./index.astro";
 ---
 
-<MainLayout>I am the contact page</MainLayout>
+<MainLayout title="Contact">
+  <h1>I am the contact page</h1>
+  <img src={mile} alt="" />
+</MainLayout>
